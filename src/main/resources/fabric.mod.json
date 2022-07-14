@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "olympicraft",
+  "version": "${version}",
+
+  "name": "OlympiCraft Mod",
+  "description": "This mod adds features for the OlympiCraft Mod pack",
+  "authors": [
+    "Lilwhiteshark"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.lilwhiteshark.olympicraft.OlympiCraftMod"
+    ]
+  },
+  "mixins": [
+    "olympicraft.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
